@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+
+    <!-- css bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    <!-- meu css -->
+    <link href="css/estilos.css" rel="stylesheet" type="text/css">
+
+    <!-- favicon -->
+    <link href="img/java-white-50.png" rel="shortcut icon" type="image/png">
+</head>
+
+<body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg bg-dark sombra-navbar border-bottom mb-5" data-bs-theme="dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <img src="img/java-white-50.png" alt="Ícone" class="meu-logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Cadastro</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- fim do navbar -->
+
+    <!-- container -->
+    <main class="container">
+        <h1>Cadastro</h1>
+        <h3 class="mt-5">Dados do usuário</h3>
+        <hr>
+
+
+        <!--Formulário-->
+        <form class="mt-5">
+            <div class="row">
+                <!-- nome -->
+                <div class="col-12 col-md-6 col-lg-4 mb-3">
+                    <label class="form-label">Nome:</label>
+                    <input class="form-control" type="text" placeholder="Primero nome"
+                        aria-label="default input example">
+                </div>
+                <!-- sobrenome -->
+                <div class="col-12 col-md-6 col-lg-8 mb-3">
+                    <label class="form-label">Sobrenome:</label>
+                    <input class="form-control" type="text" placeholder="Sobrenome completo"
+                        aria-label="default input example">
+                </div>
+                <!-- cpf -->
+                <div class="col-12 col-md-4 mb-3">
+                    <label class="form-label">CPF:</label>
+                    <input class="form-control" type="text" placeholder="000.000.000-00"
+                        aria-label="default input example">
+                </div>
+                <!-- data de nascimento -->
+                <div class="col-12 col-md-4 mb-3">
+                    <label class="form-label">Data de Nascimento:</label>
+                    <input class="form-control" type="date" aria-label="default input example">
+                </div>
+                <!-- gênero -->
+                <div class="col-12 col-md-4 mb-3">
+                    <label class="form-label">Gênero:</label>
+                    <select class="form-select" aria-label="Default select example">
+                        <option selected>Escolha uma opção...</option>
+                        <option value="1">Masculino</option>
+                        <option value="2">Feminino</option>
+                        <option value="3">Doido</option>
+                        <option value="4">Retardado</option>
+                    </select>
+                </div>
+                
+                <!--Email-->
+                
+                <div class="col12 col-md8 col-lg-9">
+                <label class="form-label">E-mail:</label>
+                    <input class="form-control" type="email" placeholder="usuário@servidor.com.br">
+                </div>
+                
+                <!--Telfone-->
+                <div>
+                <label class="form-label">Telefone:</label>
+                <input class="form-control" type="telefone" placeholder="(99) 99999-9999">
+                </div>
+
+                <!-- Escolaridade -->
+                <div class="col-12 col-md-4 mb-3">
+                    <label class="form-label">Escolaridade:</label>
+                    <select class="form-select" aria-label="Default select example">
+                        <option selected>Escolha uma opção...</option>
+                        <option value="1">Fundamental</option>
+                        <option value="2">Médio</option>
+                        <option value="3">Superior</option>
+                        <option value="4">Pós-Graduação</option>
+                        <option value="5">Mestrado</option>
+                        <option value="6">Doutorado</option>
+                    </select>
+                </div>
+
+                  <!-- Profissão -->
+                    <div class="col-12 col-md-4 mb-3">
+                    <label class="form-label">Profissão:</label>
+                    <input class="form-control" type="text" aria-label="default input example">
+                </div>
+
+                <!--Salario-->
+                <div class="col-12 col-md-4 mb-3">
+                    <label class="form-label">Salário:</label>
+                    <input class="form-control" type="number" placeholder="R$" aria-label="default imput exemple" step="100">
+                </div>
+            <h3 class="mt-5">Endereco:</h3>
+            <hr
+<!--row-->
+<div class="row mt-5">
+                <div class="row">
+                  <!-- cep -->
+                    <div class="col-12 col-md-4 mb-3">
+                    <label class="form-label">Profissão:</label>
+                    <input class="form-control" type="text" aria-label="default input example">
+                </div>
+
+                <div class="col-12 col-md-1 mb-3">
+                  <label class="form-label">UF:</label>
+                  <select class="form-select" arial-label="Default"select exemple>
+    <option value="AC">Acre</option>
+    <option value="AL">Alagoas</option>
+    <option value="AP">Amapá</option>
+    <option value="AM">Amazonas</option>
+    <option value="BA">Bahia</option>
+    <option value="CE">Ceará</option>
+    <option value="DF">Distrito Federal</option>
+    <option value="ES">Espírito Santo</option>
+    <option value="GO">Goiás</option>
+    <option value="MA">Maranhão</option>
+    <option value="MT">Mato Grosso</option>
+    <option value="MS">Mato Grosso do Sul</option>
+    <option value="MG">Minas Gerais</option>
+    <option value="PA">Pará</option>
+    <option value="PB">Paraíba</option>
+    <option value="PR">Paraná</option>
+    <option value="PE">Pernambuco</option>
+    <option value="PI">Piauí</option>
+    <option value="RJ">Rio de Janeiro</option>
+    <option value="RN">Rio Grande do Norte</option>
+    <option value="RS">Rio Grande do Sul</option>
+    <option value="RO">Rondônia</option>
+    <option value="RR">Roraima</option>
+    <option value="SC">Santa Catarina</option>
+    <option value="SP">São Paulo</option>
+    <option value="SE">Sergipe</option>
+    <option value="TO">Tocantins</option>
+    <option value="EX">Estrangeiro</option>
+</select>
+                </div>
+<!--cidade-->
+                <div class="col-12 col-md-6 col-lg-4 mb-3">
+                  <label class="form-label">Cidade:</label>
+                  <input class="form-control" type=text placeholder="Nome da cidade onde mora" aria-label="defalt input exemple">
+
+                </div>
+<!--bairro-->
+                <div class="col-12 col-md-6 col-lg-4 mb-3">
+                  <label class="form-label">Bairro:</label>
+                  <input class="form-control" type=text placeholder="Bairro onde mora" aria-label="defalt input exemple">
+                </div>
+<!--lougradouro-->
+                <div class="col-12 col-md-6 col-lg-4 mb-3">
+                  <label class="form-label">Lougradouro:</label>
+                  <input class="form-control" type=text placeholder="Lougradouro" aria-label="defalt input exemple">
+                </div>
+<!--Numero-->
+                <div class="col-12 col-md-6 col-lg-4 mb-3">
+                  <label class="form-label">Nº:</label>
+                  <input class="form-control" type=text placeholder="--Numero--" aria-label="defalt input exemple">
+                </div>
+<!--complemento-->
+                <div class="col-12 col-md-6 col-lg-8 mb-3">
+                  <label class="form-label">Complemento:</label>
+                  <input class="form-control" type=text placeholder="Nome da rua, quadra, referencia, etc ..." aria-label="defalt input exemple">
+                </div>
+                <!--Botão-->
+                <div class="d-flex justify-content-center">
+                    <button type="button" class="btn btn-primary mt-5 mb-5">Cadastrar</button>
+                </div>
+
+</div>                </div>
+
+
+          </form>
+    </main>
+    <!-- fim do container -->
+<!--footer (Rodapé)-->
+
+<footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top"> <div class="col-md-4 d-flex align-items-center"> <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1" aria-label="Bootstrap"> <svg class="bi" width="30" height="24" aria-hidden="true"><use xlink:href="#bootstrap"></use></svg> </a> <span class="mb-3 mb-md-0 text-body-secondary">© 2025 Company, Inc</span> </div> <ul class="nav col-md-4 justify-content-end list-unstyled d-flex"> <li class="ms-3"><a class="text-body-secondary" href="#" aria-label="Instagram"><svg class="bi" width="24" height="24" aria-hidden="true"><use xlink:href="#instagram"></use></svg></a></li> <li class="ms-3"><a class="text-body-secondary" href="#" aria-label="Facebook"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"></use></svg></a></li> </ul> </footer>
+
+    <!-- js bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
